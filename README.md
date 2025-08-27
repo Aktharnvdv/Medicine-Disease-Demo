@@ -116,37 +116,37 @@ This section contains the core logic for PDF extraction, API communication, and 
 
 **build_prompt(disease: str, block: str) -> str:**
 
-Constructs the precise prompt sent to the Gemini API.
+        Constructs the precise prompt sent to the Gemini API.
 
-It defines the persona ("experienced clinical pharmacist"), the task (classify medicines), and the strict JSON output format required.
+        It defines the persona ("experienced clinical pharmacist"), the task (classify medicines), and the strict JSON output format required.
 
-It dynamically inserts the disease and the text block (chunk) to be analyzed.
+        It dynamically inserts the disease and the text block (chunk) to be analyzed.
 
 **_strip_fence(text: str) -> str:**
 
-A utility function to remove Markdown code fences (e.g., ` json ...
+        A utility function to remove Markdown code fences (e.g., ` json ...
 
 **call_gemini(prompt: str) -> Dict:**
 
-Sends the prompt to the Gemini API via a POST request.
+        Sends the prompt to the Gemini API via a POST request.
 
-Handles the JSON payload, headers, and timeout.
+        Handles the JSON payload, headers, and timeout.
 
-Parses the response to extract the generated text, token usage, and status. It attempts to combine JSON from multiple parts in the model's response if they exist.
+        Parses the response to extract the generated text, token usage, and status. It attempts to combine JSON from multiple parts in the model's response if they exist.
 
-Returns a dictionary with status (ok), the parsed json, usage stats, and elapsed time.
+        Returns a dictionary with status (ok), the parsed json, usage stats, and elapsed time.
 
 **_normalize_list(lst):**
 
-A data sanitization function. It ensures that a list of medicines (e.g., relevant) contains properly formatted dictionaries ({"name": "...", "explanation": "..."}). It can handle cases where the model returns a simple list of strings instead of a list of objects.
+        A data sanitization function. It ensures that a list of medicines (e.g., relevant) contains properly formatted dictionaries ({"name": "...", "explanation": "..."}). It can handle cases where the model returns a simple list of strings instead of a list of objects.
 
 **safe_parse(reply: str) -> dict:**
 
-A robust JSON parser designed to handle imperfect LLM output.
+        A robust JSON parser designed to handle imperfect LLM output.
 
-Attempt 1: It uses regex to find the first {...} block, cleans it of trailing commas (a common JSON error), and tries to parse it.
+        Attempt 1: It uses regex to find the first {...} block, cleans it of trailing commas (a common JSON error), and tries to parse it.
 
-Attempt 2 (Fallback): If the first attempt fails, it uses regex to find sections marked "Relevant" and "Irrelevant" and extracts their contents as bulleted lists.
+        Attempt 2 (Fallback): If the first attempt fails, it uses regex to find sections marked "Relevant" and "Irrelevant" and extracts their contents as bulleted lists.
 
 It always returns a dictionary with relevant and irrelevant keys, even if they are empty lists.
 
@@ -155,26 +155,26 @@ This section defines the web endpoints.
 
 **@app.route("/"):**
 
-The root URL.
+        The root URL.
 
-Renders and serves the index.html file, which is the main user interface.
+        Renders and serves the index.html file, which is the main user interface.
 
 **@app.route("/api/analyze", methods=["POST"]):**
 
-The main API endpoint for processing PDFs.
+        The main API endpoint for processing PDFs.
 
-It orchestrates the entire workflow described in the How It Works section.
+        It orchestrates the entire workflow described in the How It Works section.
 
-It handles form validation, calls the helper functions, aggregates results, and returns the final JSON response or an error message.
+        It handles form validation, calls the helper functions, aggregates results, and returns the final JSON response or an error message.
 
-Includes a try...except block to catch unexpected server errors and return a 500 status code.
+        Includes a try...except block to catch unexpected server errors and return a 500 status code.
 
 ***4. Main Execution***
-if __name__ == "__main__"::
+        if __name__ == "__main__"::
 
-The standard Python entry point.
+        The standard Python entry point.
 
-Runs the Flask development server on 0.0.0.0:5000 with debug mode enabled.
+        Runs the Flask development server on 0.0.0.0:5000 with debug mode enabled.
 
 ***5. Setup and Usage***
 To run this application locally, follow these steps:
@@ -193,7 +193,7 @@ Then, run:
 
 bash
         pip install -r requirements.txt
-        
+
 Environment Variables: Create a file named .env in the same directory as the script. Add your Google Gemini API key to it:
 
 text
