@@ -1,33 +1,33 @@
 # Medicine-Disease-Demo
 
 
-Project Documentation: Medicine Analyzer API
+## Project Documentation: Medicine Analyzer API
 This document outlines the functionality and technical details of the Medicine Analyzer API, a Flask-based web application that uses the Google Gemini-1.5-flash-latest model to analyze PDF documents. The application identifies medicines listed in a PDF and classifies them as relevant or irrelevant for treating a specified disease.
 
-Table of Contents
-Overview
+## Table of Contents
+        Overview
 
-Features
+        Features
 
-How It Works
+        How It Works
 
-Code Breakdown
+        Code Breakdown
 
-Configuration
+        Configuration
 
-Helper Functions
+        Helper Functions
 
-API Routes
+        API Routes
 
-Main Execution
+        Main Execution
 
-Setup and Usage
+        Setup and Usage
 
-API Endpoint Details
+        API Endpoint Details
 
-POST /api/analyze
+        POST /api/analyze
 
-1. Overview
+## 1. Overview
 The Medicine Analyzer API is a Python web service built with Flask. Its primary purpose is to automate the process of reviewing lists of medications from a PDF file. It takes a disease name and a PDF as input, extracts the text, sends it in chunks to the Google Gemini API, and processes the AI-generated classifications. The final output is a structured JSON response detailing which medicines are relevant or irrelevant to the given disease, along with explanations.
 
 Core Technologies:
@@ -42,7 +42,7 @@ HTTP Requests: requests
 
 Environment Management: python-dotenv
 
-2. Features
+## 2. Features
 Web Interface: Simple Flask server to handle API requests.
 
 PDF Text Extraction: Reliably extracts both plain text and structured table data from PDF files.
@@ -57,7 +57,7 @@ Rate Limiting: Implements a delay between API calls to prevent hitting rate limi
 
 Detailed API Response: Returns aggregated results, per-chunk processing details, and usage statistics (token counts, time elapsed).
 
-3. How It Works
+## 3. How It Works
 The application follows a clear, multi-step process:
 
 User Request: A user sends a POST request to the /api/analyze endpoint with a disease name and a pdf file.
@@ -77,7 +77,7 @@ Data Aggregation: The results from each chunk are processed. Unique medicines ar
 
 Final Response: Once all chunks are processed, the server compiles a final JSON response containing the sorted, unique lists of relevant and irrelevant medicines, detailed results for each chunk, and a summary of the total API calls and token usage.
 
-4. Code Breakdown
+## 4. Code Breakdown
 The script is organized into logical sections for clarity.
 
 1. Configuration
