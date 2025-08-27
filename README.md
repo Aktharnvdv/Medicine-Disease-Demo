@@ -32,15 +32,15 @@ The Medicine Analyzer API is a Python web service built with Flask. Its primary 
 
 Core Technologies:
 
-Backend: Flask
+**Backend**: Flask
 
-AI Model: Google Gemini 1.5 Flash
+**AI Model**: Google Gemini 1.5 Flash
 
-PDF Processing: pdfplumber
+**PDF Processing**: pdfplumber
 
-HTTP Requests: requests
+**HTTP Requests**: requests
 
-Environment Management: python-dotenv
+**Environment Management**: python-dotenv
 
 ## 2. Features
 Web Interface: Simple Flask server to handle API requests.
@@ -190,7 +190,7 @@ Dependencies: Install the required Python libraries. Create a requirements.txt f
 Then, run:
 
 bash
-pip install -r requirements.txt
+        pip install -r requirements.txt
 Environment Variables: Create a file named .env in the same directory as the script. Add your Google Gemini API key to it:
 
 text
@@ -198,7 +198,7 @@ GEMINI_API_KEY="YOUR_API_KEY_HERE"
 Run the Server: Execute the script from your terminal:
 
 bash
-python your_script_name.py
+python app.py
 The server will start and be accessible at http://0.0.0.0:5000 or http://localhost:5000.
 
 ***6. API Endpoint Details***
