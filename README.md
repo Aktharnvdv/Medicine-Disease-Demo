@@ -80,7 +80,7 @@ Final Response: Once all chunks are processed, the server compiles a final JSON 
 ## 4. Code Breakdown
 The script is organized into logical sections for clarity.
 
-1. Configuration
+***1. Configuration***
 This section initializes settings and constants for the application.
 
 load_dotenv(): Loads environment variables from a .env file.
@@ -93,7 +93,7 @@ RATE_DELAY, CHUNK_LINES, REQUEST_TIMEOUT: Constants to control the rate of API c
 
 app = Flask(...): Initializes the Flask application and sets a maximum content length for uploads (20 MB).
 
-2. Helper Functions
+***2. Helper Functions***
 This section contains the core logic for PDF extraction, API communication, and data parsing.
 
 extract_text_from_pdf(data: bytes) -> str:
@@ -148,7 +148,7 @@ Attempt 2 (Fallback): If the first attempt fails, it uses regex to find sections
 
 It always returns a dictionary with relevant and irrelevant keys, even if they are empty lists.
 
-3. API Routes
+***3. API Routes***
 This section defines the web endpoints.
 
 @app.route("/"):
@@ -167,25 +167,26 @@ It handles form validation, calls the helper functions, aggregates results, and 
 
 Includes a try...except block to catch unexpected server errors and return a 500 status code.
 
-4. Main Execution
+***4. Main Execution***
 if __name__ == "__main__"::
 
 The standard Python entry point.
 
 Runs the Flask development server on 0.0.0.0:5000 with debug mode enabled.
 
-5. Setup and Usage
+***5. Setup and Usage***
 To run this application locally, follow these steps:
 
 Prerequisites: Ensure you have Python 3 and pip installed.
 
 Dependencies: Install the required Python libraries. Create a requirements.txt file with the following content:
 
-text
-flask
-python-dotenv
-requests
-pdfplumber
+        text
+        flask
+        python-dotenv
+        requests
+        pdfplumber
+
 Then, run:
 
 bash
@@ -200,7 +201,7 @@ bash
 python your_script_name.py
 The server will start and be accessible at http://0.0.0.0:5000 or http://localhost:5000.
 
-6. API Endpoint Details
+***6. API Endpoint Details***
 POST /api/analyze
 This endpoint analyzes a PDF file to classify medicines based on a given disease.
 
@@ -241,6 +242,7 @@ The API returns a JSON object with the final aggregated results and detailed met
             "tokens_out": 45
         }
         }
+
 Error Responses:
 
 400 Bad Request: Returned if disease or pdf is missing from the form, or if the file is empty.
