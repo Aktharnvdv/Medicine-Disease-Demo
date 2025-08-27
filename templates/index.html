@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Medicine–Disease Mapper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- updated CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+  <main class="page">
+    <!-- ───────── Header ───────── -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🩺</div>
+        <div>
+          <h1 class="title">Medicine–Disease Mapper</h1>
+          <p class="subtitle">Extract and map relevant medicines from a PDF list</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ───────── Controls card ───────── -->
+    <section class="card controls">
+      <div class="grid">
+        <label class="field">
+          <span class="label">Disease</span>
+          <input id="disease" type="text" placeholder="e.g. hypertension" autocomplete="off" />
+        </label>
+
+        <label class="field">
+          <span class="label">PDF file</span>
+          <input id="pdf" type="file" accept="application/pdf" />
+        </label>
+
+        <div class="actions">
+          <button id="preview" disabled>Preview PDF</button>
+          <button id="analyze" class="primary" disabled>Analyze</button>
+          <span id="spinner" class="spinner" role="status" aria-live="polite" hidden>Processing…</span>
+        </div>
+      </div>
+
+      <div class="summary-row">
+        <div id="summary" class="summary muted"></div>
+      </div>
+    </section>
+
+    <!-- ───────── Results card ───────── -->
+    <section id="output" class="card">
+      <div class="section-header">
+        <h2 class="section-title">Results</h2>
+      </div>
+      <div id="chunks" class="stack"></div>
+      <div id="empty" class="empty muted">
+        No results yet. Enter a disease, upload a PDF, and click Analyze.
+      </div>
+    </section>
+
+    <!-- ───────── PDF Preview card ───────── -->
+    <section id="pdf-viewer" class="card" hidden>
+      <div class="section-header">
+        <h2 class="section-title">PDF Preview</h2>
+      </div>
+      <embed id="pdf-embed" type="application/pdf">
+    </section>
+
+    <!-- ───────── Footer ───────── -->
+    <footer class="app-footer muted small">
+      <p>For evaluation use. Do not upload sensitive data.</p>
+    </footer>
+  </main>
+
+  <!-- updated JS -->
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

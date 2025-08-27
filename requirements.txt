@@ -1,0 +1,10 @@
+google-generativeai 
+pypdf
+python-dotenv>=1.0
+Flask>=3.0
+requests>=2.31
+langgraph 
+langchain-openai 
+pydantic[email]
+pdfplumber
+
