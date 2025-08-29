@@ -49,11 +49,12 @@ The application follows a clear, multi-step process:
 ***Text Chunking***: The extracted text is split into lines, and these lines are grouped into smaller "chunks" (defaulting to 50 lines each). This ensures each API request is a manageable size.
 
 ***Iterative API Calls***: The application loops through each chunk:
-a. A detailed prompt is constructed, instructing the Gemini model to act as a clinical pharmacist and classify medicines from the chunk as "relevant" or "irrelevant" for the specified disease. The prompt demands a strict JSON output format.
 
-b. The call_gemini function sends the request to the Google Generative Language API.
+        a. A detailed prompt is constructed, instructing the Gemini model to act as a clinical pharmacist and classify medicines from the chunk as "relevant" or "irrelevant" for the specified disease. The prompt demands a strict JSON output format.
 
-c. The response is received and parsed. The system first tries to extract a clean JSON object. If that fails, it uses a more resilient parser (safe_parse) that can handle messy or non-standard model outputs.
+        b. The call_gemini function sends the request to the Google Generative Language API.
+
+        c. The response is received and parsed. The system first tries to extract a clean JSON object. If that fails, it uses a more resilient parser (safe_parse) that can handle messy or non-standard model outputs.
 
 ***Data Aggregation***: The results from each chunk are processed. Unique medicines are added to aggregated lists for relevant and irrelevant classifications to avoid duplicates.
 
@@ -171,7 +172,7 @@ To run this application locally, follow these steps:
 
 Then, run:
 
-bash
+        bash
         pip install -r requirements.txt
 
 Environment Variables: Create a file named .env in the same directory as the script. Add your Google Gemini API key to it:
@@ -180,8 +181,9 @@ text
 GEMINI_API_KEY="YOUR_API_KEY_HERE"
 Run the Server: Execute the script from your terminal:
 
-bash
+        bash
         python app.py
+        
 The server will start and be accessible at http://0.0.0.0:5000 or http://localhost:5000.
 
 ***6. API Endpoint Details***
