@@ -172,7 +172,6 @@ To run this application locally, follow these steps:
 
 Then, run:
 
-        bash
         pip install -r requirements.txt
 
 Environment Variables: Create a file named .env in the same directory as the script. Add your Google Gemini API key to it:
@@ -181,9 +180,8 @@ text
 GEMINI_API_KEY="YOUR_API_KEY_HERE"
 Run the Server: Execute the script from your terminal:
 
-        bash
         python app.py
-        
+
 The server will start and be accessible at http://0.0.0.0:5000 or http://localhost:5000.
 
 ***6. API Endpoint Details***
