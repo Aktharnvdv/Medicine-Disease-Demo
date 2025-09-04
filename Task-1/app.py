@@ -117,6 +117,8 @@ def call_gemini(prompt: str) -> Dict[str, Any]:
     parts = data.get("candidates", [{}])[0] \
                 .get("content", {})      \
                 .get("parts",   [])
+    
+    print(data)
 
     combined: Dict[str, List[dict]] = {"relevant": [], "irrelevant": []}
 
@@ -139,7 +141,12 @@ def call_gemini(prompt: str) -> Dict[str, Any]:
         "in":  data.get("usageMetadata", {}).get("promptTokenCount",      0),
         "out": data.get("usageMetadata", {}).get("candidatesTokenCount",  0),
     }
-
+    
+    print({
+        "ok": True, "status": 200,
+        "json": combined, "usage": usage, "elapsed": elapsed
+    })
+    
     return {
         "ok": True, "status": 200,
         "json": combined, "usage": usage, "elapsed": elapsed

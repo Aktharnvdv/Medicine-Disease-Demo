@@ -1,0 +1,6 @@
+transformers 
+accelerate 
+bitsandbytes 
+torch 
+sentence-transformers
+symspellpy
