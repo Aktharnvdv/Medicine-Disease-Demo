@@ -12,7 +12,7 @@ https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning
 #finetuned qwen model, seems like it can help
 
 https://huggingface.co/epfl-llm/meditron-7b
-#https://github.com/epfLLM/meditron
+https://github.com/epfLLM/meditron
 #llama2-7b finetuned on medical corpus, including PubMed abstracts and other med documents
 
 https://huggingface.co/docs/transformers/en/model_doc/biogpt
@@ -36,7 +36,7 @@ https://huggingface.co/blog/leaderboard-medicalllm
 
 #Biobert models, finetuned models of these below,
 https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad
-#git@github.com:dmis-lab/biobert.git
+git@github.com:dmis-lab/biobert.git
 
 
 
