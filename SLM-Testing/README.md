@@ -1,7 +1,8 @@
 SLM - Testing [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19kLqZEWDQuHwep_jkefKjh8TZd4oWMCT#scrollTo=R0eT2X4Loj5p)
 
 
-https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad
+[![🤗 View on Hugging Face](https://img.shields.io/badge/Hugging%20Face-BioBERT%20v1.1%20SQuAD-yellow.svg?logo=huggingface&logoColor=white)](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad)
+
 https://github.com/dmis-lab/biobert
 Biobert models, finetuned models of these below,
 
