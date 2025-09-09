@@ -6,7 +6,8 @@ SLM - Testing [![Open in Colab](https://colab.research.google.com/assets/colab-b
 https://github.com/dmis-lab/biobert
 Biobert models, finetuned models of these below,
 
-https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT 
+[![🤗 View on Hugging Face](https://img.shields.io/badge/Hugging%20Face-Bio%E2%80%AFClinicalBERT-blue.svg?logo=huggingface&logoColor=white)](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)
+
 from biobert and trained on all MIMIC notes (MIMIC database contains extensive information on patient medications and diagnoses)
 
 https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT
