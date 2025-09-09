@@ -17,5 +17,5 @@
 | JSL-Mistral 24B | [![🤗](https://img.shields.io/badge/HF-JSL%20Mistral%2024B-darkorange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/JSL-Med-Mistral-24B-V1-Slerp-i1-GGUF) |
 | JSL-Qwen 14B | [![🤗](https://img.shields.io/badge/HF-JSL%20Qwen%2014B-teal.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/JSL-MedQwen-14b-reasoning-i1-GGUF) |
 | JSL-Phi 3.5 | [![🤗](https://img.shields.io/badge/HF-JSL%20Phi%203.5-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/JSL-Med-Phi-3.5-Mini-v3-i1-GGUF) |
-| Llama-8B UM | [![🤗](https://img.shields.io/badge/HF-JSL%20Phi%203.5-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/Llama-3.1-8B-UltraMedical-i1-GGUF) |
+| Llama-8B UM | [![🤗](https://img.shields.io/badge/HF-Llama-8B%20UM-purple%203.5-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/Llama-3.1-8B-UltraMedical-i1-GGUF) |
 | Medical LLM 🏆 | [![🏆](https://img.shields.io/badge/HF-LLM%20Leaderboard-ff69b4.svg?logo=huggingface&logoColor=white)](https://huggingface.co/blog/leaderboard-medicalllm) |
