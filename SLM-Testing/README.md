@@ -6,7 +6,7 @@
 | BioBERT repo | [![GitHub](https://img.shields.io/badge/GitHub-biobert-lightgrey?logo=github)](https://github.com/dmis-lab/biobert) |
 | ClinicalBERT | [![🤗](https://img.shields.io/badge/HF-ClinicalBERT-blue.svg?logo=huggingface&logoColor=white)](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT) |
 | Discharge BERT | [![🤗](https://img.shields.io/badge/HF-Discharge%20BERT-lightblue.svg?logo=huggingface&logoColor=white)](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT) |
-| MedGEMMA 4B-IT | [![🤗](https://img.shields.io/badge/HF-MedGEMMA 4B-IT-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/google/medgemma-4b-it) |
+| MedGEMMA 4B-IT | [![🤗](https://img.shields.io/badge/HF-MedGEMMA4B-IT-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/google/medgemma-4b-it) |
 | MedGEMMA Ollama | [![🌐](https://img.shields.io/badge/Ollama-MedGEMMA-9cf.svg)](https://ollama.com/alibayram/medgemma) |
 | Qwen-32B Med | [![🤗](https://img.shields.io/badge/HF-Qwen-32B%20Med-green.svg?logo=huggingface&logoColor=white)](https://huggingface.co/nicoboss/Qwen-3-32B-Medical-Reasoning) |
 | Meditron-7B | [![🤗](https://img.shields.io/badge/HF-Meditron-7B-brightgreen.svg?logo=huggingface&logoColor=white)](https://huggingface.co/epfl-llm/meditron-7b) |
