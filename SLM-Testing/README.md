@@ -1,9 +1,8 @@
 ## 🚀 Quick Links
-
 | Resource | Badge |
 |----------|-------|
 | Google Colab notebook | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19kLqZEWDQuHwep_jkefKjh8TZd4oWMCT#scrollTo=R0eT2X4Loj5p) |
-| BioBERT v1.1 SQuAD | [![🤗 View on Hugging Face](https://img.shields.io/badge/Hugging%20Face-BioBERT%20v1.1%20SQuAD-yellow.svg?logo=huggingface&logoColor=white)](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad) |
+| BioBERT v1.1 | [![🤗 View on Hugging Face](https://img.shields.io/badge/HF-BioBERT%20v1.1-yellow.svg?logo=huggingface&logoColor=white)](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1-squad) |
 | BioBERT GitHub repo | [![GitHub](https://img.shields.io/badge/GitHub-biobert-lightgrey?logo=github)](https://github.com/dmis-lab/biobert) |
 | Bio ClinicalBERT | [![🤗 View on Hugging Face](https://img.shields.io/badge/Hugging%20Face-Bio%E2%80%AFClinicalBERT-blue.svg?logo=huggingface&logoColor=white)](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT) |
 | Bio Discharge Summary BERT | [![🤗 View on Hugging Face](https://img.shields.io/badge/Hugging%20Face-Bio%20Discharge%20Summary%20BERT-lightblue.svg?logo=huggingface&logoColor=white)](https://huggingface.co/emilyalsentzer/Bio_Discharge_Summary_BERT) |
