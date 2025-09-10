@@ -19,3 +19,4 @@
 | JSL-Phi 3.5 | [![🤗](https://img.shields.io/badge/HF-JSL%20Phi%203.5-orange.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/JSL-Med-Phi-3.5-Mini-v3-i1-GGUF) |
 | Llama-8B UM | [![🤗](https://img.shields.io/badge/HF-Llama-8B%20UM-purple.svg?logo=huggingface&logoColor=white)](https://huggingface.co/mradermacher/Llama-3.1-8B-UltraMedical-i1-GGUF) |
 | Medical LLM 🏆 | [![🏆](https://img.shields.io/badge/HF-LLM%20Leaderboard-ff69b4.svg?logo=huggingface&logoColor=white)](https://huggingface.co/blog/leaderboard-medicalllm) |
+| SLM-O/P – Google Docs | [Google Docs](https://docs.google.com/document/d/1mKco9q3vi5c6kR--uy1FwenMAaXTHLY-SWBG6f-2BxU/edit?tab=t.0) |
