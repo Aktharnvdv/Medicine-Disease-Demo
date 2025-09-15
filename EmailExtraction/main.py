@@ -4,7 +4,7 @@ from typing import Iterable
 
 # ─── UPDATE THESE VALUES ────────────────────────────────────
 IMAP_HOST  = "imap.gmail.com"        # Gmail IMAP server
-USERNAME   = "akthercmr@gmail.com"   # <-- your address
+USERNAME   = "xxxxxxxx@gmail.com"   # <-- your address
 APP_PASS   = "xxxxxxxxxxxxxxxx"      # 16-char Gmail app password
 MAILBOX    = "INBOX"                 # IMAP folder to search
 SEARCH_CRITERIA = "UNSEEN"           # IMAP search string
